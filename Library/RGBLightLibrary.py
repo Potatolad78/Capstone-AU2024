@@ -402,6 +402,8 @@ class lightSensor:
         self.sensor = tsl2561.TSL2561(i2c)
     def returnSensor(self):
         return self.sensor
+
+
 """   Disregard This as a work in progress DOES NOT WORK 
 class clock:
     def __init__(self, busNum, sclPin, sdaPin):

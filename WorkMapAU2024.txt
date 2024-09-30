@@ -1,0 +1,21 @@
+Initial Look:
+Servo Works
+Pump Works 
+Light works
+Sensor is taking readings
+Valve is working
+Clock does not work I believe that the wires were incorrectly done
+
+I believe that we are where we used to be. This means that the known issues are present.
+
+The pump needs a certain amount of water pressure to make sure that it is able to pump water. This is a known issue
+The pump is not pumping the correct amount that I need. I need it to only pump up enough to fill the cuvette. Cuvette needs 3 ml to be full but that means we likely need even less to get a full reading. I think we will need maybe 2.5 ml.
+ 
+The valve is not fully emptying out the cuvette.
+
+
+1st Issue on the board is fixing the pump water pressure issue. I need it to be able to pump water to test the device
+
+Pump is pushing water around 47 cm from the bottom of the pump4
+Potential fix for the pump by cutting it shorter but you would still be able to work this with a stronger pump at a lower depth
+For Clock I need to cut off the bottom of the clock or re solder it.
