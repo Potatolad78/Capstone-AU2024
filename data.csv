@@ -1,0 +1,10 @@
+Received command: send_file
+Test Number,Color,Average 1,Average 2,Average 3,Total Average
+1,GREEN,1.0,1.0,1.0,1.0
+2,GREEN,1.0,1.0,1.0,1.0
+3,GREEN,1.0,1.0,1.0,1.0
+Received command: send_file
+Test Number,Color,Average 1,Average 2,Average 3,Total Average
+1,GREEN,1.0,1.0,1.0,1.0
+2,GREEN,1.0,1.0,1.0,1.0
+3,GREEN,1.0,1.0,1.0,1.0

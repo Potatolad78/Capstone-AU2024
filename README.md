@@ -79,3 +79,9 @@ replicate the project without tools then you are going to want to go with jumper
 you need. However you will have to at least have access to solder for this project as not every module on the project has headers and to use jumpers you will
 need to solder on headers. If you have access to things like wire cutters and wire strippers then normal wire should work perfectly. This will allow you to 
 have more modularity and wires also just feel more professional.
+
+### How do I solder?
+Soldering is a skill in its own right that is very difficult to master. For this project you should allocate a week or more to making sure that your skills are properly up to par with solder before permently setting things into place. I reccomend starting with watching this video
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=rK38rpUy568
+" target="_blank"><img src="http://img.youtube.com/vi/rK38rpUy568/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="970" height="728" border="10" /></a>
