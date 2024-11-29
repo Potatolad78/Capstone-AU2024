@@ -78,10 +78,28 @@ If you have access to no tools and are trying to do this project without using a
 replicate the project without tools then you are going to want to go with jumpers as you wont have to wory as much about shortening them to the size that 
 you need. However you will have to at least have access to solder for this project as not every module on the project has headers and to use jumpers you will
 need to solder on headers. If you have access to things like wire cutters and wire strippers then normal wire should work perfectly. This will allow you to 
-have more modularity and wires also just feel more professional.
+have more modularity and wires also just feel more professional. It also helps if you have solder sleeves and a heat gun as it allows for less precision when
+soldering as for difficult things you can use said solder sleeves instead.
 
 ### How do I solder?
-Soldering is a skill in its own right that is very difficult to master. For this project you should allocate a week or more to making sure that your skills are properly up to par with solder before permently setting things into place. I reccomend starting with watching this video
+Soldering is a skill in its own right that is very difficult to master. For this project you should allocate a week or more to making sure that your skills 
+are properly up to par with solder before permently setting things into place. I reccomend starting with watching this video:
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rK38rpUy568
 " target="_blank"><img src="http://img.youtube.com/vi/rK38rpUy568/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="970" height="728" border="10" /></a>
+
+### How do I go about printing parts?
+It will be very important that you 3D print the files that are attached on the github profile. I am not an expert in 3D printing so the help that I will be
+able to provide will not be much help.The software that I know how to use is [FreeCad](https://www.freecad.org/downloads.php) However the video linked is a
+good way to start:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=d_o6IzcLHvk
+" target="_blank"><img src="http://img.youtube.com/vi/d_o6IzcLHvk/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="970" height="728" border="10" /></a>
+Included [here](https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing) is also another link to a guide.
+
+## First Steps
+Going forward I am going to assume that you are going to be working with proper tools, wire, perfboards, and will be soldering. I am also going to assume that
+you 3D printed the parts that are required in the project. If you do not then you will have to go off from the instructions. If you have questions you can email
+me at the email phsensorguide@gmail.com.
+
+## Soldering Your PerfBoard
