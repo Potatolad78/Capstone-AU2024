@@ -41,8 +41,8 @@ def draw_graph(file_name):
     """
     # Calibration curve data
     calibration_curve = pd.DataFrame({
-        'x': [5, 7, 9.5],  # Known x-values (pH values)
-        'y': [0.8492741896, 0.6989145363, 0.3558160278]  # Corresponding y-values
+        'x': [5, 7, 9],  # Known x-values (pH values)
+        'y': [0.982363, 0.434377, 0.127482]  # Corresponding y-values
     })
 
     # Sort calibration curve by y-values for interpolation
@@ -106,7 +106,7 @@ def draw_graph(file_name):
 
 
 def send_command_to_pico(command):
-    pico_serial = serial.Serial('COM4', 115200, timeout=0.1)  # Longer timeout
+    pico_serial = serial.Serial('COM3', 115200, timeout=0.1)  # Longer timeout
     time.sleep(2)  # Allow Pico to initialize
 
     # Send command
@@ -130,7 +130,7 @@ def receive_file_from_pico(command, output_file):
     """
     Sends a command to the Pico to send a file, then saves the received data to a file.
     """
-    pico_serial = serial.Serial('COM4', 115200, timeout=1)  # Adjust as needed
+    pico_serial = serial.Serial('COM3', 115200, timeout=1)  # Adjust as needed
     time.sleep(2)  # Allow Pico to initialize
 
     # Send the command to the Pico

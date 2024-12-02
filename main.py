@@ -5,14 +5,11 @@ import time
 from time import sleep
 from machine import Pin
 from ph_sensor_lib import *
-red = Pin(0, Pin.OUT)
-blue = Pin(2, Pin.OUT)
+blue = Pin(15, Pin.OUT)
 blue.value(1)
 sleep(1.5)
 blue.value(0)
-red.value(0)
-
-ps = phSensor(RGBLight(0,1,2),gps(), 16, 17, 18, lightSensor(1,3,2))
+ps = phSensor(RGBLight(14,13,15),gps(0,1), 19, 18, 20, lightSensor(1,3,2))
 
 # Main loop to listen for commands over USB
 print("Waiting for commands over USB...")

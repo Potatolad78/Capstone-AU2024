@@ -175,14 +175,8 @@ class phSensor:
             self.lightSensor = lightSensor1.returnSensor()
         print(f"Sucessful creation of pH sensor class")
 
-    def take_meassurments(self, color, sleepTime, loop, r = False):
+    def take_meassurments(self, color, sleepTime, loop):
         self.isMeassuring = True
-        
-        self.dPump.value(1)
-        self.wPump.value(1)
-        sleep(3.1)
-        self.dPump.value(0)
-        self.wPump.value(0)
         
         with open("results.csv", mode='w') as file:
             # Write the header row (if it's the first time writing the file, add a check)
@@ -217,18 +211,10 @@ class phSensor:
                 for j in range(3):
                     average = 0
                     for k in range(5):
-                        if(r == False):
-                            average += self.lightSensor.read() #self.lightSensor.read()
-                        else:
-                            average += random.uniform(0.12,0.98)
-                    if(r == False):
-                        average /= 5
-                        averages.append(average/207.0545)
-                        total_average += (average/207.0545)
-                    else:
-                        average /= 5
-                        averages.append(average)
-                        total_average += average
+                        average += self.lightSensor.read() #self.lightSensor.read()
+                    average /= 5
+                    averages.append(average/207.0545)
+                    total_average += (average/207.0545)
 
                 total_average /= 3
 
@@ -238,9 +224,6 @@ class phSensor:
                 # Write the results to the file
                 line = f"{test_number},{color.upper()},{gps_time},{gps_lat},{gps_lon},{averages[0]},{averages[1]},{averages[2]},{total_average}\n"
                 file.write(line)
-        self.valve.value(1)
-        sleep(15)
-        self.valve.value(0)
         self.isMeassuring = False
     
 
