@@ -94,3 +94,5 @@ you 3D printed the parts that are required in the project. If you do not then yo
 me at the email phsensorguide@gmail.com.
 
 ## Soldering Your PerfBoard
+When soldering your perfboard it is very important to try and avoid errors as these sre semi permanant. 
+![Raspberry Pi Pico Pinout](https://microcontrollerslab.com/wp-content/uploads/2021/01/Raspberry-Pi-Pico-pinout-diagram.svg)
