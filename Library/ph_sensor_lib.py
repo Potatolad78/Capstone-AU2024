@@ -210,7 +210,7 @@ class phSensor:
                     raise ValueError("Invalid color specified. Try Red, Blue, Green, or Purple")
 
                 # Allow sensor to stabilize
-                #self.lightSensor.read()
+                self.lightSensor.read()
                 sleep(sleepTime)
 
                 # Take measurements
@@ -218,11 +218,12 @@ class phSensor:
                     average = 0
                     for k in range(5):
                         if(r == False):
-                            average += self.lightSensor.read() #self.lightSensor.read()
+                            average += self.lightSensor.read() 
                         else:
                             average += random.uniform(0.12,0.98)
                     if(r == False):
                         average /= 5
+                        #When calibrating remove the /207.0545
                         averages.append(average/207.0545)
                         total_average += (average/207.0545)
                     else:
