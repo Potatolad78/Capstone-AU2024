@@ -94,9 +94,47 @@ you 3D printed the parts that are required in the project. If you do not then yo
 me at the email phsensorguide@gmail.com.
 
 ## Soldering Your PerfBoard
+### Soldering The Pico
 When soldering your perfboard it is very important to try and avoid errors as these sre semi permanent. 
 ![Raspberry Pi Pico Pinout](https://microcontrollerslab.com/wp-content/uploads/2021/01/Raspberry-Pi-Pico-pinout-diagram.svg)
+[Link to Pinout](https://microcontrollerslab.com/raspberry-pi-pico-pinout-features-programming-peripherals/)
 I personally recommend that you dtart by soldering female header pins into the perfboard. The pico is 20 pins long so you will need a long enough strip of pins.
 If you have a strip that us longer then you can use wire cutters to cut it down to size. Try and solder in a digonal pattern, soldering one corner then another.
-This along with a stabilization method(Tape the item into place in the back side) should help keep the female headers straight so you can slot the pico in flush.
+Remember that you ahould also be soldering the UNDERSIDE of the board and not the top. This along with a stabilization method(Tape the item into place in the front side) 
+should help keep the female headers straight so you can slot the pico in flush.
+The following picture is an example of pins soldered onto a board:
+![Pins on Perf](https://rimstar.org/science_electronics_projects/pin_headers_soldering_cutting_male_female/mounting_female_pin_headers_04_result.jpg)
+The following picture is an example of a pico sloted into header pins. (Note your female pins should be soldered onto the board not the pico)
 ![Flush Pico](https://thepihut.com/cdn/shop/products/female-header-set-for-raspberry-pi-pico-the-pi-hut-103530-23239876346051_1000x.jpg?v=1646865917)
+
+Once you have completed that you have successfully done the first step, congratulations! Next we will solder the power busses.
+
+###Soldering The Power Buses
+You should have space for two power busses on your perfboard. Assuming that you bought the perfboard I recommend then the two strips on the side are dedicated busses.
+If you did not buy that board then you will have to solder your connections(Please note I will not be covering bridging connections and I recommend watching a video 
+on it). You will see on your perfboard that there is a red positive side for the bus and a blue negative side. This means you will need to solder the battery ground
+to the blue side and the power to the red side. Remeber one bus is 3 volts and the other is 12 volts so you should have a 3 volt battery pack and a 12 volt battery
+pack. INCLUDE PHOTO HERE
+If you have a multimeter you can test your work by powering the battery and putting one side to positive and another to ground on the board and then switch to volotage.
+Some wires that come out of battery packs are flimsy so you should try and use an adhesive to keep them in place, I used super glue. If you did this correctly you will see the 
+correct voltage read on the multimeter. If the volatage seems slightly off then check to see if your AA batteries are fully charged. Next we are going to solder male headers 
+onto the busses so we can connect jumpers. You will need at least 7 available headers on both power and ground for 3 Volts and at least 4 for both positive and ground for 12 volts. 
+Since we have gone over the process already I wont here but follow the same principles and all should go well. INCLUDE PHOTO
+Once your busses are done we only have a few more headers to solder!
+
+###Soldering Out Pins
+By now you should have some experience soldering so I will be using less detail so please refer to previous sections for questions or contact me. 
+Now we will connect the pico to the 3V ground with a wire(if you only have jumpers you will need to cut the ends off of it and strip it to be used as a wire.) Using the Pinout 
+diagram locate the ground closest to the USB2 port and the 3V Bus. 
+INCLUDE PHOTO of circled Correct Pin.
+
+Now we will be soldering one end of the wire directly next to the ground of the pico that is higlighted above and the other end to the ground bus of the 3V battery pack. 
+
+Right next to that ground is the VSYS pin, this gives 5 volts of power which will be used for the GPS. We will solder a male header right next to that VSYS pin so you can 
+use a jumper to connect to the GPS and power it.
+INCLUDE PHOTO of circled correct pin
+
+Next we will be soldering male header pins next to GPins 0,1,18,19,and 20. It will be the same as previous male header pins.
+
+INCLUDE PHOTO of circled correct pins
+
