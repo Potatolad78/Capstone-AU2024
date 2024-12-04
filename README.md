@@ -99,4 +99,4 @@ When soldering your perfboard it is very important to try and avoid errors as th
 I personally recommend that you dtart by soldering female header pins into the perfboard. The pico is 20 pins long so you will need a long enough strip of pins.
 If you have a strip that us longer then you can use wire cutters to cut it down to size. Try and solder in a digonal pattern, soldering one corner then another.
 This along with a stabilization method(Tape the item into place in the back side) should help keep the female headers straight so you can slot the pico in flush.
-![Flush Pico](https://shorturl.at/uleDY)
+![Flush Pico](https://thepihut.com/cdn/shop/products/female-header-set-for-raspberry-pi-pico-the-pi-hut-103530-23239876346051_1000x.jpg?v=1646865917)
