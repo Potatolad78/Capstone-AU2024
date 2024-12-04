@@ -161,6 +161,9 @@ ATTACH PHOTO OF GPS WITH PINS
 If you have a heat gun and solder seal wire you are done soldering! If not there will still be some soldering. Going forward I will be assuming you have a heat gun and solder wrap however
 solder wrap only does the job of soldering and covering exposed wire so you can do that with solder and heat shrink or electrical tape. 
 
-## Wiring Up Your Sensor
+## Printing Your Parts
+Now that you have got your soldering done its time to go about 3D printing the reuqired parts in the CAD folder of the repo. All desining is already done for you so you can take
+those files to a 3D printer, enter them, and begin the printing while wecpnnect all of the wiring together. If you dont have a 3D printer check your local library and if they dont
+have one available check your school.
 
 
