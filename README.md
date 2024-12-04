@@ -1,3 +1,30 @@
+## Table of Contents
+1. [Project Overview](#project-overview)
+    - [What is pH and how is it important to oceanography?](#what-is-ph-and-how-is-it-important-to-oceanography)
+    - [What relevance does this have to computer science?](#what-relevance-does-this-have-to-computer-science)
+    - [What use might this project have in high school curriculum?](#what-use-might-this-project-have-in-high-school-curriculum)
+2. [Why use this as a project?](#why-use-this-as-a-project)
+3. [What will I need?](#what-will-i-need)
+    - [Deployment Materials](#deployment-materials)
+    - [Perfboard or Breadboard?](#perfboard-or-breadboard)
+    - [Wires or Jumpers?](#wires-or-jumpers)
+4. [How do I solder?](#how-do-i-solder)
+5. [What IDE should I use?](#what-ide-should-i-use)
+6. [First Steps](#first-steps)
+7. [Soldering Your PerfBoard](#soldering-your-perfboard)
+    - [Soldering the Pico](#soldering-the-pico)
+    - [Soldering the Power Buses](#soldering-the-power-buses)
+    - [Soldering Out Pins](#soldering-out-pins)
+8. [Printing Your Parts](#printing-your-parts)
+9. [Putting Things Together](#putting-things-together)
+    - [Deployment](#deployment)
+    - [Connecting Wires](#connecting-wires)
+10. [Calibrating the Machine](#calibrating-the-machine)
+11. [Troubleshooting](#troubleshooting)
+    - [Compartmentalizing](#compartmentalizing)
+    - [Taking a Break](#taking-a-break)
+
+
 ## Project Overview
 This project, developed by Drew Rigby as a capstone for the Applied Computing major at the University of Washington Bothell, integrates computer science concepts with oceanography, reflecting the intersection of my major and minor. The objective was to design and build an automated pH sensor capable of sampling water and providing accurate pH measurements.
 
