@@ -153,33 +153,44 @@ You should have space for two power busses on your perfboard. Assuming that you 
 If you did not buy that board then you will have to solder your connections(Please note I will not be covering bridging connections and I recommend watching a video 
 on it). You will see on your perfboard that there is a red positive side for the bus and a blue negative side. This means you will need to solder the battery ground
 to the blue side and the power to the red side. Remeber one bus is 3 volts and the other is 12 volts so you should have a 3 volt battery pack and a 12 volt battery
-pack. INCLUDE PHOTO HERE
+pack. 
+
+![PowerBus](Photos/CircledBus.jpg)
+
 If you have a multimeter you can test your work by powering the battery and putting one side to positive and another to ground on the board and then switch to volotage.
 Some wires that come out of battery packs are flimsy so you should try and use an adhesive to keep them in place, I used super glue. If you did this correctly you will see the 
 correct voltage read on the multimeter. If the volatage seems slightly off then check to see if your AA batteries are fully charged. Next we are going to solder male headers 
 onto the busses so we can connect jumpers. You will need at least 7 available headers on both power and ground for 3 Volts and at least 4 for both positive and ground for 12 volts. 
-Since we have gone over the process already I wont here but follow the same principles and all should go well. INCLUDE PHOTO
+Since we have gone over the process already I wont here but follow the same principles and all should go well. 
+
+![HeaderCircle](Photos/CircledHeaderBus.PNG)
+
 Once your busses are done we only have a few more headers to solder!
 
 ### Soldering Out Pins
 By now you should have some experience soldering so I will be using less detail so please refer to previous sections for questions or contact me. 
 Now we will connect the pico to the 3V ground with a wire(if you only have jumpers you will need to cut the ends off of it and strip it to be used as a wire.) Using the Pinout 
 diagram locate the ground closest to the USB2 port and the 3V Bus. 
-INCLUDE PHOTO of circled Correct Pin.
+![Correct Pinout](Photos/PicoOutGND1.png)
+![Example of Wire](Photos/PicoGndToBus.PNG)
 
 Now we will be soldering one end of the wire directly next to the ground of the pico that is higlighted above and the other end to the ground bus of the 3V battery pack. 
 
 Right next to that ground is the VSYS pin, this gives 5 volts of power which will be used for the GPS. We will solder a male header right next to that VSYS pin so you can 
 use a jumper to connect to the GPS and power it.
-INCLUDE PHOTO of circled correct pin
+
+![PicoOut](Photos/VSYSPICOOUT.png)
+![Example of VSYS](Photos/VSYSEXAMPLE.PNG)
 
 Next we will be soldering male header pins next to GPins 0,1,2,3,18,19,and 20. It will be the same as previous male header pins.
 
-INCLUDE PHOTO of circled correct pins
+![PicoOutHeaders](Photos/PicoOutHeaders.png)
+![PhotoOfPico](Photos/PicoExample.jpg)
+
 
 Finally we are going to solder the headers and cables for the RGB Light. This is were we will use our 220ohm resistors. As seen in that image:
 
-INCLUDE PHOTO OF REISSTORS
+![Resistors](Photos/Resistors.jpg)
 
 Using the same wiring process as before we are going to solder wires from GP 13,14,and 15 to the BOARD rows 8,7,and 6. It is important that you are not wiring to pins on the pico
 instead you are wiring to empty rows on the board. You should leave one empty slot between the cable and the middle gap as that is where the resistors are going. I reccomend wiring
@@ -187,7 +198,7 @@ GP 13 to board row 9, GP 14 to row 8,and GP 15 to row 9. You can also color code
 going to solder in the resistors. The resistors should bridge the middle gap on the board and connect to the corresponding side. Think of it as part of the wire so you want it to be inline
 with the same rows. Once your resistors are done you can now solder male headers on the side of the board with no wires as in the photo:
 
-ATTACH PHOTO OF HEADER FOR RGB
+![RGBHeaders](Photos/RGBHeaderWiring.jpg)
 
 Once those headers are soldered you are all done with thr perf board! Congratulations!
 
@@ -195,7 +206,7 @@ Once those headers are soldered you are all done with thr perf board! Congratula
 Depending on your setup this could be your last bit of soldering! You simply must solder some male headers onto your light sensor and GPS so you can connect jumpers to them. This is just
 the same as soldering the board except you must be a bit more delicate as overflowing solder is more likely to cause issues. 
 
-ATTACH PHOTO OF GPS WITH PINS
+![GPSExample](Photos/GPSExample.PNG)
 
 If you have a heat gun and solder seal wire you are done soldering! If not there will still be some soldering. Going forward I will be assuming you have a heat gun and solder wrap however
 solder wrap only does the job of soldering and covering exposed wire so you can do that with solder and heat shrink or electrical tape. 
@@ -210,25 +221,25 @@ have one available check your school.
 While your parts are printing we are going to get back to putting things together. The first thing that you will need to do is set up your deployment method. The following photo is a
 picture guide of what we will be doing:
 
-INCLUDE PHOTO OF SENSOR FROM FRONT
+![Frontal Image](Photos/Frontal.jpg)
 
 Start by cutting the pool noodles in half length wise. Take two halves of the pool noodles and cut enough of a section out they can comfortably wrap around the edges of the boogie board.
 Poke three holes in the boogie board on each side near the pool noodles. Through each hole run zipties through and around the pool noodles to strap them into place. Finally attach the
 final two halves of pool noodle under the boogie board and strap them to the boogie board using the same ziptie method.
 
-INCLUDE PHOTO OF THE SENSOR HIGHLIGHTING THE ZIPTIES 
+![Ziptie](Photos/ZipSideView.jpg)
 
 Now we are going to drill holes in the side of our box to run cacbles out. They should just be big enough to fit a cable gland through, once it is through you should tighten the nut on the
 inside and using the ruber seal. Attached will be a video link that shows how to do so [here](https://www.facebook.com/waterproofcablegland/videos/how-to-install-the-cable-gland-to-the-junction-box/700374587211266/)
 
 Once that is done your box should look something like this:
 
-INCLUDE BOX PHOTO
+![Topdown](Photos/TOpDown.jpg)
 
 Now you have to run a zip tie through the top of the ruler and secure it to the front of your boogie board using the same method used with the pool noodles. Poke a hole in the front of the 
 board and run a zip tie through it and the ruler and lock it stright down. You will then need to secure you DV pump to the bottom of the ruler as seen here:
 
-INCLUDE PICTURE OF THE PUMP
+![HighlightingPump](Photos/Highlighting%20Pump.jpg)
 
 You will also have to run tubing to the pump so it is important to make sure that it isnt flailing around. Zip ties can do the job just remember not to cut off any flow of the pump as it is 
 very delicatly meassured in terms of timing and anything could change said timing. Once the tubing to the pump runs all the way up you want to make sure that you cut it to size. That is where 
@@ -238,7 +249,7 @@ important that you slowly up the drill bit size as just going to the size of the
 the bulk shipment as they tend to be somewhat flimsly. Once done with that you should then use your adhesive of choice to secure the tubing to the bottom of the cuvettes. It should only be about 
 6 inches of tubing max for the cuvettes each as all it is doing is connecting the cuvette to the valve. While doing that cut out a few inches of tubing to connect your valve to your container.
 
-INCLUDE IMAGE OF UNDERSIDES OF SENSOR
+![Valve](Photos/Valve.jpg)
 
 That tubing can be applied to one end of the valve and then run to the plastic waste container which then have to have a subsequent hole cut through it and adhesiove will have to join the tubing
 with said container. Now your cuvettes should be dry, make sure to test that they arent leaking as if they are it can cause damage to the electronics and will make it almost impossible to get a
@@ -251,12 +262,12 @@ material. On the other side take out the syringe plunger, remove the tip from th
 can then cut the syringe down to size and make sure that it sits flush with the cuvette cover while also leaving room for the intake tubing from the peresaltic pump  to fit through the gap 
 on the bottom of the cuvette cover.Then run the tubing out from the perasaltic pump  It should look something like this:
 
-INCLUDE IMAGE OF THE CUVETTE COVER
+![CuvetteCover](Photos/CuvetteCover.jpg)
 
 Now you just have to secure the box to the boogie board. I used super glue but you can use whatever you would like to secure the box to the board but once you are done we have our deployment
 method finished. It should look something like this without the wires everywhere
 
-INCLUDE IMAGE OF FINISHED
+![Finished](Photos/Finished.jpg)
 
 ### Connecting Wires
 When trying to connect jumpers with longer wires you will likely want to use solder wrap. If you dont have it you will just have to cut wires snd solder them together and then cover with either 
