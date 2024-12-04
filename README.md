@@ -109,7 +109,7 @@ The following picture is an example of a pico sloted into header pins. (Note you
 
 Once you have completed that you have successfully done the first step, congratulations! Next we will solder the power busses.
 
-###Soldering The Power Buses
+### Soldering The Power Buses
 You should have space for two power busses on your perfboard. Assuming that you bought the perfboard I recommend then the two strips on the side are dedicated busses.
 If you did not buy that board then you will have to solder your connections(Please note I will not be covering bridging connections and I recommend watching a video 
 on it). You will see on your perfboard that there is a red positive side for the bus and a blue negative side. This means you will need to solder the battery ground
@@ -122,7 +122,7 @@ onto the busses so we can connect jumpers. You will need at least 7 available he
 Since we have gone over the process already I wont here but follow the same principles and all should go well. INCLUDE PHOTO
 Once your busses are done we only have a few more headers to solder!
 
-###Soldering Out Pins
+### Soldering Out Pins
 By now you should have some experience soldering so I will be using less detail so please refer to previous sections for questions or contact me. 
 Now we will connect the pico to the 3V ground with a wire(if you only have jumpers you will need to cut the ends off of it and strip it to be used as a wire.) Using the Pinout 
 diagram locate the ground closest to the USB2 port and the 3V Bus. 
@@ -137,4 +137,30 @@ INCLUDE PHOTO of circled correct pin
 Next we will be soldering male header pins next to GPins 0,1,18,19,and 20. It will be the same as previous male header pins.
 
 INCLUDE PHOTO of circled correct pins
+
+Finally we are going to solder the headers and cables for the RGB Light. This is were we will use our 220ohm resistors. As seen in that image:
+
+INCLUDE PHOTO OF REISSTORS
+
+Using the same wiring process as before we are going to solder wires from GP 13,14,and 15 to the BOARD rows 8,7,and 6. It is important that you are not wiring to pins on the pico
+instead you are wiring to empty rows on the board. You should leave one empty slot between the cable and the middle gap as that is where the resistors are going. I reccomend wiring
+GP 13 to board row 9, GP 14 to row 8,and GP 15 to row 9. You can also color code your wires to help you remember what pins reflect what colors on the led. Once you do that we are
+going to solder in the resistors. The resistors should bridge the middle gap on the board and connect to the corresponding side. Think of it as part of the wire so you want it to be inline
+with the same rows. Once your resistors are done you can now solder male headers on the side of the board with no wires as in the photo:
+
+ATTACH PHOTO OF HEADER FOR RGB
+
+Once those headers are soldered you are all done with thr perf board! Congratulations!
+
+### Soldering GPS and Light Sensor
+Depending on your setup this could be your last bit of soldering! You simply must solder some male headers onto your light sensor and GPS so you can connect jumpers to them. This is just
+the same as soldering the board except you must be a bit more delicate as overflowing solder is more likely to cause issues. 
+
+ATTACH PHOTO OF GPS WITH PINS
+
+If you have a heat gun and solder seal wire you are done soldering! If not there will still be some soldering. Going forward I will be assuming you have a heat gun and solder wrap however
+solder wrap only does the job of soldering and covering exposed wire so you can do that with solder and heat shrink or electrical tape. 
+
+## Wiring Up Your Sensor
+
 
