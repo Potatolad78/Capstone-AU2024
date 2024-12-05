@@ -136,6 +136,14 @@ alt="IMAGE ALT TEXT HERE" width="970" height="728" border="10" /></a>
 
 
 ### What IDE should I use?
+Before we get there it is important that you install the proper packages for python and install python itself. Installing python can be done [here](https://www.python.org/downloads/)
+
+When python is done installing then you should also be able to run these commands in your terminalto get the needed libraries installed.
+
+```console
+pip install pyserial pandas matplotlib
+```
+
 You should install [Thonny](https://thonny.org/) as it will detect when you connect your pico to the system and on the bottom left you should be able to click
 the com that your pico connects to and be able to edit code on said pico. To test this you should install the library directory and the main.py from the repo
 onto the pico. Do this by going into Thonny, detecting your device and making sure that you have the device open it should look like this:
